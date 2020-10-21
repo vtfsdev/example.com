@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-       <title>Thank you</title>
+       <title>Victor Tung Contact</title>
        <meta charset="UTF-8">
        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
        <link rel="author" href="humans.txt" />
@@ -14,6 +14,7 @@
        <link rel="manifest" href="/site.webmanifest">
        <link href="./dist/css/main.min.css" type="text/css" rel="stylesheet">
     </head>
+    <main>
     <body>
       <header>
         <span class="logo">My WebSite</span>
@@ -26,9 +27,29 @@
           </ul>
         </nav>
       </header>
-          <h1>Thank you!</h1>
-          <p>Thank you for contacting us.</p>
-
+          <form class="contact-form" action="https://formspree.io/vtfsdev_bootcamp@mailinator.com" method="POST">
+            <div>
+              <input type="hidden" name="_subject" value="New submission!">
+            </div>
+            <div>
+              <label for="name">Name</label>
+              <input id="name" type="text" name="name">
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input id="email" type="text" name="_replyto">  
+            </div>
+            <div>
+              <label for="message">Message</label>
+              <textarea id="message" name="message"></textarea>
+            </div>
+            <div>
+              <input type="submit" value="Send">
+            </div>
+            <input type="hidden" name="_next" value="//vtfsdev.github.io/thanks.html">
+            <!-- <input type="text" name="_gotcha" style="display:none"> -->
+          </form>
+        </main>
           <script>
 
             var toggleMenu = document.getElementById('toggleMenu');
@@ -45,4 +66,5 @@
             );
           </script>
     </body>
+    </main>
 </html>
