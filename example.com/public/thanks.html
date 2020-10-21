@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       <title>Thank you</title>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+       <link rel="author" href="humans.txt" />
+       <link rel="stylesheet" type="text/css" href="./dist/css/main.min.css">
+       <meta name="description" content="Victor Tung's Site">
+       <meta name="keywords" content="full stack developer, scrum master, LAMP, MEAN">
+       <link rel="apple-touch-icon" sizes="180x180" href="/android-chrome-192x192.png">
+       <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+       <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+       <link rel="manifest" href="/site.webmanifest">
+       <link href="./dist/css/main.min.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+      <header>
+        <span class="logo">My WebSite</span>
+        <a id="toggleMenu">Menu<a></a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+          <h1>Thank you!</h1>
+          <p>Thank you for contacting us.</p>
+
+          <script>
+
+            var toggleMenu = document.getElementById('toggleMenu');
+            var nav = document.querySelector('nav');
+            toggleMenu.addEventListener(
+              'click',
+              function(){
+                if(nav.style.display=='block'){
+                  nav.style.display='none';
+                }else{
+                  nav.style.display='block';
+                }
+              }
+            );
+          </script>
+    </body>
+</html>
