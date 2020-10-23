@@ -1,4 +1,5 @@
 <?php
+require '../../core/bootstrap.php';
 include '../../core/db_connect.php';
 
 $content=null;
@@ -14,3 +15,4 @@ $content .= "<br><br><a href=\"add.php\">Add user</a>";
 
 
 include '../../core/layout.php';
+checkSession();

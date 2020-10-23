@@ -1,6 +1,6 @@
 <?php
+require '../../core/bootstrap.php';
 require '../../core/functions.php';
-require '../../config/keys.php';
 require '../../core/db_connect.php';
 
 $message=null;
@@ -68,3 +68,5 @@ $content = <<<EOT
 EOT;
 
 include '../../core/layout.php';
+checkSession();
+

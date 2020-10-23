@@ -1,5 +1,4 @@
 <?php
-
 require '../core/processContactForm.php';
 
 //Build the page metadata
